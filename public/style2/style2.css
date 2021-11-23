@@ -17,7 +17,7 @@ header h1{
   
 }
 
-figure img{
+img{
   transform: rotate(-15deg);
   position: absolute;
   width: 150px;
@@ -157,8 +157,9 @@ section h3{
 }
 .contact-email{
   background-image: url(../images/email.png);
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 120px;
+  margin-top: -0.1%;
 }
 .contact-facebook{
   background-image: url(../images/facebook.png);
@@ -169,4 +170,37 @@ section h3{
   background-image: url(../images/github.png);
   height: 80px;
   width: 80px;
+}
+
+@media (max-width:1024px) {
+  img{
+    display: none;
+  }
+  body{
+    margin: 20px;
+  }
+  #competencies, #experiences, #education, #hobbies {
+    display: block;
+    padding-bottom: 35px;
+  }
+  .experience, .skills, #hobbies ul{
+    border-left: none;
+  }
+  section h3{
+    border-bottom: 1px solid black;
+    width: 35%;
+  }
+  #about p{
+    max-width: max-content;
+  }
+  .skills-primary, .experience, .education, .hobbies{
+    padding-top: 35px;
+  }
+  .contacts{
+    width: 120%;
+    flex-wrap: wrap;
+    margin: 0;
+    justify-content: left;
+  }
+
 }
