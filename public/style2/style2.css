@@ -1,0 +1,172 @@
+body {
+    font-family: "Times New Roman", Times, serif, sans-serif;
+    margin: 0 15% 0 15%;
+    background-color: #c6f1d9;
+  }
+
+
+header h2 {
+  display: none;
+}
+
+header h1{
+  color:  #0d5f4f;
+  font-size: 30pt;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+  
+}
+
+figure img{
+  transform: rotate(-15deg);
+  position: absolute;
+  width: 150px;
+  right: 20%;
+  top: 4%;
+}
+
+#about{
+  max-width: 70%;
+  margin-bottom: 10%;
+  font-style: italic;
+  color: gray;
+}
+
+#about h3{
+  display: none;
+}
+
+section h3{
+  font-style: italic;
+  font-weight: bold;
+  color: #0d5f4f;
+  width: 20%;
+}
+
+.experience-institution, .contacts dt, .contacts dd, .contact-skype, #contact h3 {
+  display: none;
+}
+
+
+.skill {
+  color: #fff;
+  background-color:  #1c9980;
+  font-weight: bold;
+  width: 100px;
+  padding: 10px;
+  margin: 5px;
+}
+.skills-secondary{
+  opacity: 0.8;
+}
+.skills-secondary .skill {
+  font-size: 12px;
+}
+.skills-primary, .skills-secondary {
+  display: flex;
+  grid-column: 2 ;
+  border-left: 1px solid black;
+}
+
+
+.skill[data-skill='1']::after{
+  content: '★';
+  float: right;
+}
+
+.skill[data-skill='3']::after {
+  content: '★★';
+  float: right;
+}
+
+.skill[data-skill='5']::after {
+  content: '★★★';
+  float: right;
+}
+
+.skill[data-skill='7']::after{
+  content: '★★★★';
+  float: right;
+}
+
+.skill[data-skill='9']::after{
+  content: '★★★★★';
+  float: right;
+}
+
+
+.experience{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+.experience h4{
+  margin-top: 0;
+}
+.experience-details{
+  color: gray;
+  text-align: end;
+}
+.experience-date-separator{
+  color:  #0b5345 ;
+  font-weight: bold;
+  font-size: large;
+}
+.experience-type{
+  color: #0f6554;
+  font-weight: bold;
+}
+.experience-description {
+  grid-column: 1/3;
+}
+#hobbies ul{
+  border-left: 1px solid black;
+}
+
+#experiences, #education, #competencies, #hobbies {
+  display: grid;
+  grid-template-columns: 110px auto;
+  margin-top: 20px;
+}
+
+#competencies h3, #education h3, #hobbies h3, #experiences h3 {
+  grid-row: 1/3;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+}
+
+
+.contacts{
+  display: flex;
+  margin: auto;
+  width: 60%;
+  justify-content: center;
+}
+.contact{
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 20px;
+}
+
+.contact-phone{
+  background-image: url(../images/phone.png);
+  height: 80px;
+  width: 80px;
+}
+.contact-email{
+  background-image: url(../images/email.png);
+  height: 100px;
+  width: 100px;
+}
+.contact-facebook{
+  background-image: url(../images/facebook.png);
+  height: 80px;
+  width: 80px;
+}
+.contact-github{
+  background-image: url(../images/github.png);
+  height: 80px;
+  width: 80px;
+}
